@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XMTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    XMTabBarController * tab = [[XMTabBarController alloc]init];
+    self.window.rootViewController = tab;    
     // Override point for customization after application launch.
     return YES;
 }

@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  newBase
+//
+//  Created by new-1020 on 2017/5/24.
+//  Copyright © 2017年 Rowling. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "XMHeaderFile.h"
+#import "ServiceUrl.h"
+#import "LoginTool.h"
+#define LocalizedString(key) [Apputil LocalizedString:key]
+/**
+ *  设置字体大小
+ */
+#define UI_FONT(size) [UIFont systemFontOfSize:size]
+#define errorCode ([responseObject[@"errcode"] longValue] != 1)
+//---------------------正则表达式--------------------------//
+#define _FORM_STRING_NUMBER__ @"^[0-9]+([.]{0,1}[0-9]{0,2}){0,1}$"
+#define _FORM_STRING_EMAIL__ @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+
+#endif /* PrefixHeader_pch */
