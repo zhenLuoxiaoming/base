@@ -11,6 +11,7 @@
 #import "XMHeaderFile.h"
 #import "ServiceUrl.h"
 #import "LoginTool.h"
+#import <UIImageView+WebCache.h>
 #define LocalizedString(key) [Apputil LocalizedString:key]
 /**
  *  设置字体大小
@@ -20,5 +21,5 @@
 //---------------------正则表达式--------------------------//
 #define _FORM_STRING_NUMBER__ @"^[0-9]+([.]{0,1}[0-9]{0,2}){0,1}$"
 #define _FORM_STRING_EMAIL__ @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
-
+#define ColorDefault XMColor(104, 173, 128)
 #endif /* PrefixHeader_pch */

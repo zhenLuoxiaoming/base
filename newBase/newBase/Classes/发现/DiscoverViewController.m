@@ -17,13 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self band];
     [self connect];
 //    [[GCDSocketManager sharedSocketManager] connectToServer];
 }
-
+-(void)band {
+    NSDictionary * dic = @{
+                           @"equipId" : @"1",
+                           @"userId" : [LoginTool shareInstance].userModel.ID,
+                           @"equipNum" : @"CDHS100000002"
+                           };
+    
+    [WYNetTool GET_Urlstring:@"http://119.23.45.80/Demo/public/Index/bindEquipment" parameters:dic success:^(id responseObject) {
+        
+    } fail:^(id error) {
+        
+    }];
+}
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event  {
-    [self connect];
+//    [self connect];
     [self sendMessage];
 }
 
@@ -48,9 +61,13 @@
 // 发送数据
 
 - (void)sendMessage{
-    NSString * str = @"2:CDHS100000001:@AGet#";
+    NSString * str =[NSString stringWithFormat: @"1:%@:CDHS100000002",[LoginTool shareInstance].userModel.ID];
     [self.socket writeData:[str dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:0];
     [self.socket readDataWithTimeout:-1 tag:0];
+}
+
+-(void)socket:(GCDAsyncSocket *)sock didWriteDataWithTag:(long)tag {
+    
 }
 
 -(void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err {

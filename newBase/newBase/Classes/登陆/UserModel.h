@@ -16,4 +16,5 @@
 @property (nonatomic,strong) NSString * password;
 @property (nonatomic,strong) NSString * telephone;
 @property (nonatomic,strong) NSString * user_id;
+@property (nonatomic,strong) NSString * user_img;
 @end

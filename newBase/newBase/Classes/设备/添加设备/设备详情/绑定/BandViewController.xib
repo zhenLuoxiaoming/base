@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BandViewController">
+            <connections>
+                <outlet property="CodeTextFeild" destination="bqK-Re-Hqv" id="UuY-g2-dDk"/>
+                <outlet property="bandbutton" destination="Zoy-cR-J5P" id="hWl-2j-szT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jBL-5k-MOL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wai-2L-HfZ">
+                            <rect key="frame" x="0.0" y="63" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.87296874999999996" green="0.87296874999999996" blue="0.87296874999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Tuc-rN-Zp6"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入设备编号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bqK-Re-Hqv">
+                            <rect key="frame" x="10" y="0.0" width="365" height="63"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="2G0-Q6-mGT"/>
+                        <constraint firstItem="Wai-2L-HfZ" firstAttribute="top" secondItem="bqK-Re-Hqv" secondAttribute="bottom" id="9qJ-CJ-kx9"/>
+                        <constraint firstAttribute="trailing" secondItem="Wai-2L-HfZ" secondAttribute="trailing" id="CtW-ED-bBx"/>
+                        <constraint firstItem="bqK-Re-Hqv" firstAttribute="leading" secondItem="jBL-5k-MOL" secondAttribute="leading" constant="10" id="MOO-cU-u0j"/>
+                        <constraint firstItem="bqK-Re-Hqv" firstAttribute="top" secondItem="jBL-5k-MOL" secondAttribute="top" id="ajo-03-fGJ"/>
+                        <constraint firstAttribute="trailing" secondItem="bqK-Re-Hqv" secondAttribute="trailing" id="drx-vf-0PI"/>
+                        <constraint firstAttribute="bottom" secondItem="Wai-2L-HfZ" secondAttribute="bottom" id="eFF-9H-blf"/>
+                        <constraint firstItem="Wai-2L-HfZ" firstAttribute="leading" secondItem="jBL-5k-MOL" secondAttribute="leading" id="iDA-p7-gW5"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="wgc-Bf-hAo"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoy-cR-J5P">
+                    <rect key="frame" x="20" y="84" width="335" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="PeY-Qk-vEb"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="Qks-qB-26C"/>
+                        <constraint firstAttribute="height" constant="50" id="pzX-dt-0LP"/>
+                    </constraints>
+                    <state key="normal" title="绑定">
+                        <color key="titleColor" red="0.4090664685" green="0.6794388294" blue="0.50000160930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="bandButtonClick:" destination="-1" eventType="touchUpInside" id="5V7-iE-zdc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jBL-5k-MOL" secondAttribute="trailing" id="Esy-6u-JrF"/>
+                <constraint firstItem="Zoy-cR-J5P" firstAttribute="top" secondItem="jBL-5k-MOL" secondAttribute="bottom" constant="20" id="NZU-lN-HeQ"/>
+                <constraint firstItem="Zoy-cR-J5P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="cZf-Fd-jdy"/>
+                <constraint firstItem="jBL-5k-MOL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cc8-Le-nD5"/>
+                <constraint firstAttribute="trailing" secondItem="Zoy-cR-J5P" secondAttribute="trailing" constant="20" id="o7w-v2-Lux"/>
+                <constraint firstItem="jBL-5k-MOL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uX7-JC-4Rz"/>
+            </constraints>
+            <point key="canvasLocation" x="-185" y="-42"/>
+        </view>
+    </objects>
+</document>

@@ -11,6 +11,7 @@
 #import "XMSuperHelper.h"
 #import "Apputil.h"
 #import "WYNetTool.h"
+#import "Masonry.h"
 #define XMweakSelf __weak typeof(self)weakSelf = self
 
 /************************UI相关*******************************************/

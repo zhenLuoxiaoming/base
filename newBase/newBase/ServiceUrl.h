@@ -13,4 +13,7 @@
 #define registerURL @"http://119.23.45.80/Demo/public/Index/checkAndReg"
 #define LoginUrl @"http://119.23.45.80/Demo/public/Index/login"
 #define changePassword @"http://119.23.45.80/Demo/public/Index/updatePwd"
+#define getEquipList @"http://119.23.45.80/Demo/public/Index/getType"
+#define getSingleEquipInfo @"http://119.23.45.80/Demo/public/Index/getOneEquipment"
+#define getBandEquip @"http://119.23.45.80/Demo/public/Index/boundEquipment"
 #endif /* ServiceUrl_h */

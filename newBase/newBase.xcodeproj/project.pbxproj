@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		001487F81ED921020071F4D7 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001487F61ED921020071F4D7 /* ChangePasswordViewController.m */; };
 		001487F91ED921020071F4D7 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001487F71ED921020071F4D7 /* ChangePasswordViewController.xib */; };
+		001487FD1ED931410071F4D7 /* AddEquipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001487FC1ED931410071F4D7 /* AddEquipViewController.m */; };
+		001488011ED94D9A0071F4D7 /* AddEquipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001487FF1ED94D9A0071F4D7 /* AddEquipCell.m */; };
+		001488021ED94D9A0071F4D7 /* AddEquipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001488001ED94D9A0071F4D7 /* AddEquipCell.xib */; };
+		001488061ED94E5B0071F4D7 /* EquipCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001488041ED94E5B0071F4D7 /* EquipCollectionReusableView.m */; };
+		001488071ED94E5B0071F4D7 /* EquipCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001488051ED94E5B0071F4D7 /* EquipCollectionReusableView.xib */; };
+		0014880C1ED955870071F4D7 /* EquipDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0014880A1ED955870071F4D7 /* EquipDetailViewController.m */; };
+		0014880D1ED955870071F4D7 /* EquipDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0014880B1ED955870071F4D7 /* EquipDetailViewController.xib */; };
+		001488121ED980970071F4D7 /* BandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001488101ED980970071F4D7 /* BandViewController.m */; };
+		001488131ED980970071F4D7 /* BandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001488111ED980970071F4D7 /* BandViewController.xib */; };
 		004246921ED5CE830058878C /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004246911ED5CE830058878C /* DiscoverViewController.m */; };
 		004246951ED5D1860058878C /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004246941ED5D1860058878C /* ShopViewController.m */; };
 		0042469B1ED5D1B00058878C /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0042469A1ED5D1B00058878C /* MessageViewController.m */; };
@@ -51,6 +60,20 @@
 		001487F51ED921020071F4D7 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
 		001487F61ED921020071F4D7 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
 		001487F71ED921020071F4D7 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		001487FB1ED931410071F4D7 /* AddEquipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEquipViewController.h; sourceTree = "<group>"; };
+		001487FC1ED931410071F4D7 /* AddEquipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEquipViewController.m; sourceTree = "<group>"; };
+		001487FE1ED94D9A0071F4D7 /* AddEquipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEquipCell.h; sourceTree = "<group>"; };
+		001487FF1ED94D9A0071F4D7 /* AddEquipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEquipCell.m; sourceTree = "<group>"; };
+		001488001ED94D9A0071F4D7 /* AddEquipCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEquipCell.xib; sourceTree = "<group>"; };
+		001488031ED94E5B0071F4D7 /* EquipCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipCollectionReusableView.h; sourceTree = "<group>"; };
+		001488041ED94E5B0071F4D7 /* EquipCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipCollectionReusableView.m; sourceTree = "<group>"; };
+		001488051ED94E5B0071F4D7 /* EquipCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EquipCollectionReusableView.xib; sourceTree = "<group>"; };
+		001488091ED955870071F4D7 /* EquipDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipDetailViewController.h; sourceTree = "<group>"; };
+		0014880A1ED955870071F4D7 /* EquipDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipDetailViewController.m; sourceTree = "<group>"; };
+		0014880B1ED955870071F4D7 /* EquipDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EquipDetailViewController.xib; sourceTree = "<group>"; };
+		0014880F1ED980970071F4D7 /* BandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BandViewController.h; sourceTree = "<group>"; };
+		001488101ED980970071F4D7 /* BandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BandViewController.m; sourceTree = "<group>"; };
+		001488111ED980970071F4D7 /* BandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BandViewController.xib; sourceTree = "<group>"; };
 		004246231ED5C4F40058878C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		004246901ED5CE830058878C /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		004246911ED5CE830058878C /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
@@ -152,6 +175,43 @@
 			path = "修改密码";
 			sourceTree = "<group>";
 		};
+		001487FA1ED9312B0071F4D7 /* 添加设备 */ = {
+			isa = PBXGroup;
+			children = (
+				001488081ED9556C0071F4D7 /* 设备详情 */,
+				001487FB1ED931410071F4D7 /* AddEquipViewController.h */,
+				001487FC1ED931410071F4D7 /* AddEquipViewController.m */,
+				001487FE1ED94D9A0071F4D7 /* AddEquipCell.h */,
+				001487FF1ED94D9A0071F4D7 /* AddEquipCell.m */,
+				001488001ED94D9A0071F4D7 /* AddEquipCell.xib */,
+				001488031ED94E5B0071F4D7 /* EquipCollectionReusableView.h */,
+				001488041ED94E5B0071F4D7 /* EquipCollectionReusableView.m */,
+				001488051ED94E5B0071F4D7 /* EquipCollectionReusableView.xib */,
+			);
+			path = "添加设备";
+			sourceTree = "<group>";
+		};
+		001488081ED9556C0071F4D7 /* 设备详情 */ = {
+			isa = PBXGroup;
+			children = (
+				0014880E1ED980810071F4D7 /* 绑定 */,
+				001488091ED955870071F4D7 /* EquipDetailViewController.h */,
+				0014880A1ED955870071F4D7 /* EquipDetailViewController.m */,
+				0014880B1ED955870071F4D7 /* EquipDetailViewController.xib */,
+			);
+			path = "设备详情";
+			sourceTree = "<group>";
+		};
+		0014880E1ED980810071F4D7 /* 绑定 */ = {
+			isa = PBXGroup;
+			children = (
+				0014880F1ED980970071F4D7 /* BandViewController.h */,
+				001488101ED980970071F4D7 /* BandViewController.m */,
+				001488111ED980970071F4D7 /* BandViewController.xib */,
+			);
+			path = "绑定";
+			sourceTree = "<group>";
+		};
 		004246241ED5C6D90058878C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +275,7 @@
 		0042468D1ED5CDCC0058878C /* 设备 */ = {
 			isa = PBXGroup;
 			children = (
+				001487FA1ED9312B0071F4D7 /* 添加设备 */,
 				0042469F1ED5D21A0058878C /* DevieceViewController.h */,
 				004246A01ED5D21A0058878C /* DevieceViewController.m */,
 			);
@@ -434,12 +495,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001488131ED980970071F4D7 /* BandViewController.xib in Resources */,
 				001487F91ED921020071F4D7 /* ChangePasswordViewController.xib in Resources */,
 				009580741ED8255D0037377D /* LoginViewController.xib in Resources */,
 				009580861ED83AC30037377D /* SVProgressHUD.bundle in Resources */,
 				0095807A1ED833DE0037377D /* RegisterViewController.xib in Resources */,
+				0014880D1ED955870071F4D7 /* EquipDetailViewController.xib in Resources */,
 				00F3B3381ED3ED9800815877 /* LaunchScreen.storyboard in Resources */,
 				00F3B3351ED3ED9800815877 /* Assets.xcassets in Resources */,
+				001488071ED94E5B0071F4D7 /* EquipCollectionReusableView.xib in Resources */,
+				001488021ED94D9A0071F4D7 /* AddEquipCell.xib in Resources */,
 				00F3B3331ED3ED9800815877 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				009580851ED83AC30037377D /* SVIndefiniteAnimatedView.m in Sources */,
+				001487FD1ED931410071F4D7 /* AddEquipViewController.m in Sources */,
 				009580B91ED880900037377D /* MASViewConstraint.m in Sources */,
 				0095808F1ED863620037377D /* UserModel.m in Sources */,
 				009580B51ED880900037377D /* MASConstraint.m in Sources */,
@@ -509,19 +575,23 @@
 				004246921ED5CE830058878C /* DiscoverViewController.m in Sources */,
 				009580C01ED880900037377D /* XMSuperHelper.m in Sources */,
 				009580BF1ED880900037377D /* XMBaseViewController.m in Sources */,
+				001488061ED94E5B0071F4D7 /* EquipCollectionReusableView.m in Sources */,
 				009580BD1ED880900037377D /* ViewController+MASAdditions.m in Sources */,
 				009580BC1ED880900037377D /* View+MASAdditions.m in Sources */,
 				0042469B1ED5D1B00058878C /* MessageViewController.m in Sources */,
 				001487F81ED921020071F4D7 /* ChangePasswordViewController.m in Sources */,
 				009580B81ED880900037377D /* MASViewAttribute.m in Sources */,
+				001488121ED980970071F4D7 /* BandViewController.m in Sources */,
 				009580791ED833DE0037377D /* RegisterViewController.m in Sources */,
 				00F3B32D1ED3ED9800815877 /* AppDelegate.m in Sources */,
 				0095807D1ED838D10037377D /* JKCountDownButton.m in Sources */,
 				009580B41ED880900037377D /* MASCompositeConstraint.m in Sources */,
 				009580B71ED880900037377D /* MASLayoutConstraint.m in Sources */,
 				009580BE1ED880900037377D /* WYNetTool.m in Sources */,
+				001488011ED94D9A0071F4D7 /* AddEquipCell.m in Sources */,
 				004246A11ED5D21A0058878C /* DevieceViewController.m in Sources */,
 				004246A41ED5D24D0058878C /* XMnavigationController.m in Sources */,
+				0014880C1ED955870071F4D7 /* EquipDetailViewController.m in Sources */,
 				009580B61ED880900037377D /* MASConstraintMaker.m in Sources */,
 				009580BA1ED880900037377D /* NSArray+MASAdditions.m in Sources */,
 				00F3B32A1ED3ED9800815877 /* main.m in Sources */,
