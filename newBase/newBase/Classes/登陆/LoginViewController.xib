@@ -150,6 +150,9 @@
                     <state key="normal" title="忘记密码">
                         <color key="titleColor" red="0.40906646847724915" green="0.67943882942199707" blue="0.50000160932540894" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="forgetButtonClick:" destination="-1" eventType="touchUpInside" id="3DB-i1-UJw"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAw-qS-yWJ">
                     <rect key="frame" x="227" y="753" width="62" height="30"/>

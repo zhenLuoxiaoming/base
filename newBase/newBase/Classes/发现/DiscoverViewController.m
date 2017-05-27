@@ -30,6 +30,8 @@
 -(void)connect {
     NSString *host = @"119.23.45.80";
     int port = 8098;
+    //创建一个socket对象
+//    self.socket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)];
     self.socket = [[GCDAsyncSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     //连接
     NSError *error = nil;
@@ -43,6 +45,7 @@
 
 }
 
+// 发送数据
 
 - (void)sendMessage{
     NSString * str = @"2:CDHS100000001:@AGet#";
@@ -69,5 +72,18 @@
     NSLog(@"str = %@", str);
     [self.socket readDataWithTimeout:-1 tag:0];
 }
+
+
+
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

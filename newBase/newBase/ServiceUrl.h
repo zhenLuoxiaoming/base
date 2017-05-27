@@ -12,4 +12,5 @@
 #define getMessage @"http://119.23.45.80/Demo/public/Index/sendCode"
 #define registerURL @"http://119.23.45.80/Demo/public/Index/checkAndReg"
 #define LoginUrl @"http://119.23.45.80/Demo/public/Index/login"
+#define changePassword @"http://119.23.45.80/Demo/public/Index/updatePwd"
 #endif /* ServiceUrl_h */

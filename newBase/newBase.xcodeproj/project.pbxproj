@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001487F81ED921020071F4D7 /* ChangePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001487F61ED921020071F4D7 /* ChangePasswordViewController.m */; };
+		001487F91ED921020071F4D7 /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001487F71ED921020071F4D7 /* ChangePasswordViewController.xib */; };
 		004246921ED5CE830058878C /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004246911ED5CE830058878C /* DiscoverViewController.m */; };
 		004246951ED5D1860058878C /* ShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004246941ED5D1860058878C /* ShopViewController.m */; };
 		0042469B1ED5D1B00058878C /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0042469A1ED5D1B00058878C /* MessageViewController.m */; };
@@ -46,6 +48,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001487F51ED921020071F4D7 /* ChangePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePasswordViewController.h; sourceTree = "<group>"; };
+		001487F61ED921020071F4D7 /* ChangePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePasswordViewController.m; sourceTree = "<group>"; };
+		001487F71ED921020071F4D7 /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
 		004246231ED5C4F40058878C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		004246901ED5CE830058878C /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		004246911ED5CE830058878C /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
@@ -137,9 +142,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001487F41ED920D20071F4D7 /* 修改密码 */ = {
+			isa = PBXGroup;
+			children = (
+				001487F51ED921020071F4D7 /* ChangePasswordViewController.h */,
+				001487F61ED921020071F4D7 /* ChangePasswordViewController.m */,
+				001487F71ED921020071F4D7 /* ChangePasswordViewController.xib */,
+			);
+			path = "修改密码";
+			sourceTree = "<group>";
+		};
 		004246241ED5C6D90058878C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				001487F41ED920D20071F4D7 /* 修改密码 */,
 				009580751ED8296F0037377D /* 注册 */,
 				0095806F1ED825430037377D /* 登陆 */,
 				0042468B1ED5CDCC0058878C /* 发现 */,
@@ -418,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001487F91ED921020071F4D7 /* ChangePasswordViewController.xib in Resources */,
 				009580741ED8255D0037377D /* LoginViewController.xib in Resources */,
 				009580861ED83AC30037377D /* SVProgressHUD.bundle in Resources */,
 				0095807A1ED833DE0037377D /* RegisterViewController.xib in Resources */,
@@ -495,6 +512,7 @@
 				009580BD1ED880900037377D /* ViewController+MASAdditions.m in Sources */,
 				009580BC1ED880900037377D /* View+MASAdditions.m in Sources */,
 				0042469B1ED5D1B00058878C /* MessageViewController.m in Sources */,
+				001487F81ED921020071F4D7 /* ChangePasswordViewController.m in Sources */,
 				009580B81ED880900037377D /* MASViewAttribute.m in Sources */,
 				009580791ED833DE0037377D /* RegisterViewController.m in Sources */,
 				00F3B32D1ED3ED9800815877 /* AppDelegate.m in Sources */,

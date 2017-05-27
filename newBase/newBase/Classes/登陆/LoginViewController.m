@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import "ChangePasswordViewController.h"
 @interface LoginViewController ()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *centerContentView;
@@ -62,6 +63,10 @@
         return;
     }
     [self doLoging];
+}
+- (IBAction)forgetButtonClick:(id)sender {
+    ChangePasswordViewController * vc = [[ChangePasswordViewController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 -(void)doLoging {
