@@ -9,8 +9,9 @@
 #import "DevieceViewController.h"
 #import "LoginViewController.h"
 #import "AddEquipViewController.h"
-@interface DevieceViewController ()
+@interface DevieceViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView * tableView;
+@property (nonatomic,strong) NSArray *dataArray;
 @end
 
 @implementation DevieceViewController
@@ -18,6 +19,8 @@
 -(UITableView *)tableView {
     if (_tableView == nil) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
     }
     return _tableView;
 }
@@ -28,9 +31,6 @@
     [self setUpUI];
     
 }
-
-
-
 
 -(void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:YES];
@@ -48,12 +48,12 @@
                                @"userId" : [LoginTool shareInstance].userModel.ID
                                };
         [WYNetTool GET_Urlstring:getBandEquip parameters:dic success:^(id responseObject) {
+            self.dataArray = responseObject[@"data"];
             [self.view addSubview:self.tableView];
             [Apputil dismiss];
         } fail:^(id error) {
             [Apputil showError:@"网络出错"];
         }];
-        
     }
 }
 
@@ -112,9 +112,23 @@
     noEqumLabel.center = self.view.center;
 }
 
+#pragma -mark:tableDelegate
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataArray.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell * cell = [[UITableViewCell alloc]init];
+    
+    return cell;
+}
+
+
 -(void)addButtonClick {
-    AddEquipViewController * vc = [[AddEquipViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+    [[LoginTool shareInstance] youMustLoinWithTarget:self Dothis:^{
+        AddEquipViewController * vc = [[AddEquipViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
 }
 
 
@@ -128,14 +142,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self band];
+//    [self band];
     [self connect];
 //    [[GCDSocketManager sharedSocketManager] connectToServer];
 }
@@ -80,8 +80,6 @@
     NSLog(@"连接成功");
     [self.socket readDataWithTimeout:-1 tag:0];
 }
-
-
 
 - (void)socket:(GCDAsyncSocket*)sock didReadData:(NSData *)data withTag:(long)tag {
     
