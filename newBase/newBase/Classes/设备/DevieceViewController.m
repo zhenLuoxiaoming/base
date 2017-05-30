@@ -9,9 +9,12 @@
 #import "DevieceViewController.h"
 #import "LoginViewController.h"
 #import "AddEquipViewController.h"
+#import "DevieceCell.h"
+#import "EnvironmentVC.h"
 @interface DevieceViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView * tableView;
 @property (nonatomic,strong) NSArray *dataArray;
+
 @end
 
 @implementation DevieceViewController
@@ -21,6 +24,8 @@
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.tableFooterView = [[UIView alloc]init];
+        [_tableView registerNib:[UINib nibWithNibName:@"DevieceCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
     }
     return _tableView;
 }
@@ -56,6 +61,28 @@
         }];
     }
 }
+#pragma -mark:tableDelegate
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataArray.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    UITableViewCell * cell = [[UITableViewCell alloc]init];
+    DevieceCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    cell.data = self.dataArray[indexPath.row];
+    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 140;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    EnvironmentVC * vc = [[EnvironmentVC alloc]init];
+    vc.data = self.dataArray[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 -(void)setUpUI {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -112,17 +139,6 @@
     noEqumLabel.center = self.view.center;
 }
 
-#pragma -mark:tableDelegate
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell * cell = [[UITableViewCell alloc]init];
-    
-    return cell;
-}
-
 
 -(void)addButtonClick {
     [[LoginTool shareInstance] youMustLoinWithTarget:self Dothis:^{
@@ -137,10 +153,6 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 
 @end

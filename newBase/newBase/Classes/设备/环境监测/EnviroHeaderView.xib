@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="245"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KK8-FK-jYl">
+                    <rect key="frame" x="0.0" y="0.0" width="383" height="245"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cs" translatesAutoresizingMaskIntoConstraints="NO" id="4tI-h4-Lpi">
+                            <rect key="frame" x="0.0" y="0.0" width="383" height="245"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="4tI-h4-Lpi" firstAttribute="leading" secondItem="KK8-FK-jYl" secondAttribute="leading" id="AtZ-6P-fjN"/>
+                        <constraint firstAttribute="trailing" secondItem="4tI-h4-Lpi" secondAttribute="trailing" id="FVD-da-gRf"/>
+                        <constraint firstItem="4tI-h4-Lpi" firstAttribute="top" secondItem="KK8-FK-jYl" secondAttribute="top" id="Td2-T6-P5N"/>
+                        <constraint firstAttribute="bottom" secondItem="4tI-h4-Lpi" secondAttribute="bottom" id="dA8-Z8-bT7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KK8-FK-jYl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LGE-uZ-fP5"/>
+                <constraint firstAttribute="trailing" secondItem="KK8-FK-jYl" secondAttribute="trailing" id="iZJ-rX-dGV"/>
+                <constraint firstAttribute="bottom" secondItem="KK8-FK-jYl" secondAttribute="bottom" id="kaD-Eu-wVZ"/>
+                <constraint firstItem="KK8-FK-jYl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kf4-Nx-x2g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-92.5" y="-145.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cs" width="754" height="289"/>
+    </resources>
+</document>

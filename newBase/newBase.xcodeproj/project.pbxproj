@@ -48,6 +48,14 @@
 		009580BE1ED880900037377D /* WYNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 009580AE1ED880900037377D /* WYNetTool.m */; };
 		009580BF1ED880900037377D /* XMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009580B01ED880900037377D /* XMBaseViewController.m */; };
 		009580C01ED880900037377D /* XMSuperHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 009580B31ED880900037377D /* XMSuperHelper.m */; };
+		009998941EDC07DC00FF7073 /* DevieceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 009998921EDC07DC00FF7073 /* DevieceCell.m */; };
+		009998951EDC07DC00FF7073 /* DevieceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009998931EDC07DC00FF7073 /* DevieceCell.xib */; };
+		009998A41EDC15D900FF7073 /* EnvironmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 009998A21EDC15D900FF7073 /* EnvironmentVC.m */; };
+		009998A51EDC15D900FF7073 /* EnvironmentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009998A31EDC15D900FF7073 /* EnvironmentVC.xib */; };
+		009998A81EDC215F00FF7073 /* Provineces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 009998A71EDC215F00FF7073 /* Provineces.plist */; };
+		009998AB1EDC225800FF7073 /* CityChoseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009998AA1EDC225800FF7073 /* CityChoseView.m */; };
+		009998AE1EDD2ADC00FF7073 /* EnviroHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009998AD1EDD2ADC00FF7073 /* EnviroHeaderView.m */; };
+		009998B01EDD2AF500FF7073 /* EnviroHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009998AF1EDD2AF500FF7073 /* EnviroHeaderView.xib */; };
 		00F3B32A1ED3ED9800815877 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B3291ED3ED9800815877 /* main.m */; };
 		00F3B32D1ED3ED9800815877 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F3B32C1ED3ED9800815877 /* AppDelegate.m */; };
 		00F3B3331ED3ED9800815877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F3B3311ED3ED9800815877 /* Main.storyboard */; };
@@ -140,6 +148,18 @@
 		009580B11ED880900037377D /* XMHeaderFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMHeaderFile.h; sourceTree = "<group>"; };
 		009580B21ED880900037377D /* XMSuperHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSuperHelper.h; sourceTree = "<group>"; };
 		009580B31ED880900037377D /* XMSuperHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSuperHelper.m; sourceTree = "<group>"; };
+		009998911EDC07DC00FF7073 /* DevieceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevieceCell.h; sourceTree = "<group>"; };
+		009998921EDC07DC00FF7073 /* DevieceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevieceCell.m; sourceTree = "<group>"; };
+		009998931EDC07DC00FF7073 /* DevieceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DevieceCell.xib; sourceTree = "<group>"; };
+		009998A11EDC15D900FF7073 /* EnvironmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnvironmentVC.h; sourceTree = "<group>"; };
+		009998A21EDC15D900FF7073 /* EnvironmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnvironmentVC.m; sourceTree = "<group>"; };
+		009998A31EDC15D900FF7073 /* EnvironmentVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnvironmentVC.xib; sourceTree = "<group>"; };
+		009998A71EDC215F00FF7073 /* Provineces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Provineces.plist; sourceTree = "<group>"; };
+		009998A91EDC225800FF7073 /* CityChoseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityChoseView.h; sourceTree = "<group>"; };
+		009998AA1EDC225800FF7073 /* CityChoseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityChoseView.m; sourceTree = "<group>"; };
+		009998AC1EDD2ADC00FF7073 /* EnviroHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnviroHeaderView.h; sourceTree = "<group>"; };
+		009998AD1EDD2ADC00FF7073 /* EnviroHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnviroHeaderView.m; sourceTree = "<group>"; };
+		009998AF1EDD2AF500FF7073 /* EnviroHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnviroHeaderView.xib; sourceTree = "<group>"; };
 		00F3B3251ED3ED9800815877 /* newBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F3B3291ED3ED9800815877 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00F3B32B1ED3ED9800815877 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -275,9 +295,13 @@
 		0042468D1ED5CDCC0058878C /* 设备 */ = {
 			isa = PBXGroup;
 			children = (
+				009998961EDC0B6C00FF7073 /* 环境监测 */,
 				001487FA1ED9312B0071F4D7 /* 添加设备 */,
 				0042469F1ED5D21A0058878C /* DevieceViewController.h */,
 				004246A01ED5D21A0058878C /* DevieceViewController.m */,
+				009998911EDC07DC00FF7073 /* DevieceCell.h */,
+				009998921EDC07DC00FF7073 /* DevieceCell.m */,
+				009998931EDC07DC00FF7073 /* DevieceCell.xib */,
 			);
 			path = "设备";
 			sourceTree = "<group>";
@@ -371,6 +395,29 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		009998961EDC0B6C00FF7073 /* 环境监测 */ = {
+			isa = PBXGroup;
+			children = (
+				009998A11EDC15D900FF7073 /* EnvironmentVC.h */,
+				009998A21EDC15D900FF7073 /* EnvironmentVC.m */,
+				009998A31EDC15D900FF7073 /* EnvironmentVC.xib */,
+				009998A91EDC225800FF7073 /* CityChoseView.h */,
+				009998AA1EDC225800FF7073 /* CityChoseView.m */,
+				009998AC1EDD2ADC00FF7073 /* EnviroHeaderView.h */,
+				009998AD1EDD2ADC00FF7073 /* EnviroHeaderView.m */,
+				009998AF1EDD2AF500FF7073 /* EnviroHeaderView.xib */,
+			);
+			path = "环境监测";
+			sourceTree = "<group>";
+		};
+		009998A61EDC215900FF7073 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				009998A71EDC215F00FF7073 /* Provineces.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		00F3B31C1ED3ED9800815877 = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +442,7 @@
 				004246241ED5C6D90058878C /* Classes */,
 				0042465B1ED5C8BB0058878C /* Tool */,
 				0042465A1ED5C8BB0058878C /* lib */,
+				009998A61EDC215900FF7073 /* Resource */,
 				00F3B32B1ED3ED9800815877 /* AppDelegate.h */,
 				00F3B32C1ED3ED9800815877 /* AppDelegate.m */,
 				00F3B3341ED3ED9800815877 /* Assets.xcassets */,
@@ -497,13 +545,17 @@
 			files = (
 				001488131ED980970071F4D7 /* BandViewController.xib in Resources */,
 				001487F91ED921020071F4D7 /* ChangePasswordViewController.xib in Resources */,
+				009998A81EDC215F00FF7073 /* Provineces.plist in Resources */,
 				009580741ED8255D0037377D /* LoginViewController.xib in Resources */,
+				009998A51EDC15D900FF7073 /* EnvironmentVC.xib in Resources */,
+				009998B01EDD2AF500FF7073 /* EnviroHeaderView.xib in Resources */,
 				009580861ED83AC30037377D /* SVProgressHUD.bundle in Resources */,
 				0095807A1ED833DE0037377D /* RegisterViewController.xib in Resources */,
 				0014880D1ED955870071F4D7 /* EquipDetailViewController.xib in Resources */,
 				00F3B3381ED3ED9800815877 /* LaunchScreen.storyboard in Resources */,
 				00F3B3351ED3ED9800815877 /* Assets.xcassets in Resources */,
 				001488071ED94E5B0071F4D7 /* EquipCollectionReusableView.xib in Resources */,
+				009998951EDC07DC00FF7073 /* DevieceCell.xib in Resources */,
 				001488021ED94D9A0071F4D7 /* AddEquipCell.xib in Resources */,
 				00F3B3331ED3ED9800815877 /* Main.storyboard in Resources */,
 			);
@@ -569,6 +621,8 @@
 				009580B91ED880900037377D /* MASViewConstraint.m in Sources */,
 				0095808F1ED863620037377D /* UserModel.m in Sources */,
 				009580B51ED880900037377D /* MASConstraint.m in Sources */,
+				009998A41EDC15D900FF7073 /* EnvironmentVC.m in Sources */,
+				009998941EDC07DC00FF7073 /* DevieceCell.m in Sources */,
 				009580731ED8255D0037377D /* LoginViewController.m in Sources */,
 				009580921ED864830037377D /* LoginTool.m in Sources */,
 				009580871ED83AC30037377D /* SVProgressHUD.m in Sources */,
@@ -590,11 +644,13 @@
 				009580BE1ED880900037377D /* WYNetTool.m in Sources */,
 				001488011ED94D9A0071F4D7 /* AddEquipCell.m in Sources */,
 				004246A11ED5D21A0058878C /* DevieceViewController.m in Sources */,
+				009998AB1EDC225800FF7073 /* CityChoseView.m in Sources */,
 				004246A41ED5D24D0058878C /* XMnavigationController.m in Sources */,
 				0014880C1ED955870071F4D7 /* EquipDetailViewController.m in Sources */,
 				009580B61ED880900037377D /* MASConstraintMaker.m in Sources */,
 				009580BA1ED880900037377D /* NSArray+MASAdditions.m in Sources */,
 				00F3B32A1ED3ED9800815877 /* main.m in Sources */,
+				009998AE1EDD2ADC00FF7073 /* EnviroHeaderView.m in Sources */,
 				0042469E1ED5D1E90058878C /* XMTabBarController.m in Sources */,
 				004246951ED5D1860058878C /* ShopViewController.m in Sources */,
 				0095808A1ED83AE60037377D /* Apputil.m in Sources */,
