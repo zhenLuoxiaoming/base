@@ -10,4 +10,11 @@
 
 @interface EnviroHeaderView : UIView
 
+@property (nonatomic,strong) NSDictionary *data;
+@property (nonatomic,strong) NSDictionary *Adata;
+@property (nonatomic,strong) NSDictionary *Bdata;
+
+
+
++(instancetype)fastLogin;
 @end

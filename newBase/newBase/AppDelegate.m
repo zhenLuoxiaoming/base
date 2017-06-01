@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XMTabBarController.h"
-
+#import "XMSocktManager.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +20,7 @@
     
     XMTabBarController * tab = [[XMTabBarController alloc]init];
     self.window.rootViewController = tab;    
-    // Override point for customization after application launch.
+    [[XMSocktManager shareInstance] connect];
     return YES;
 }
 

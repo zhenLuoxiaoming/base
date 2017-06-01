@@ -38,9 +38,10 @@
     UIView * view = [[UIView alloc]init];
     [self addSubview:view];
     view.frame = CGRectMake(0, self.bounds.size.height - SCREEN_HEIGHT / 3  - 40, SCREEN_WIDTH, 40);
-    view.backgroundColor = [UIColor redColor];
+    view.backgroundColor = [UIColor whiteColor];
     UIButton * btn = [[UIButton alloc]init];
     [view addSubview:btn];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [btn setTitle:@"完成" forState:UIControlStateNormal];
     [btn sizeToFit];
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {

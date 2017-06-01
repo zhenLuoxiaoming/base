@@ -18,4 +18,5 @@
 #define getBandEquip @"http://119.23.45.80/Demo/public/Index/boundEquipment"
 #define getA @"http://119.23.45.80/Demo/public/Index/getAInfo"
 #define cityWeather @"http://119.23.45.80/Demo/public/Index/cityWeather"
+#define getB @"http://119.23.45.80/Demo/public/Index/getBInfo"
 #endif /* ServiceUrl_h */

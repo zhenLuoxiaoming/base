@@ -24,6 +24,14 @@
 		0042469E1ED5D1E90058878C /* XMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0042469D1ED5D1E90058878C /* XMTabBarController.m */; };
 		004246A11ED5D21A0058878C /* DevieceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004246A01ED5D21A0058878C /* DevieceViewController.m */; };
 		004246A41ED5D24D0058878C /* XMnavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004246A31ED5D24D0058878C /* XMnavigationController.m */; };
+		0092281C1EDE7DA8007A265D /* XMSocktManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092281B1EDE7DA8007A265D /* XMSocktManager.m */; };
+		009228211EDEA8FB007A265D /* WeekModelViewControolerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092281F1EDEA8FB007A265D /* WeekModelViewControolerViewController.m */; };
+		009228221EDEA8FB007A265D /* WeekModelViewControolerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009228201EDEA8FB007A265D /* WeekModelViewControolerViewController.xib */; };
+		009228261EDEC137007A265D /* XMdatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009228241EDEC137007A265D /* XMdatePickerView.m */; };
+		009228271EDEC137007A265D /* XMdatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009228251EDEC137007A265D /* XMdatePickerView.xib */; };
+		0092282C1EDFAA32007A265D /* WuranModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092282A1EDFAA32007A265D /* WuranModeViewController.m */; };
+		0092282D1EDFAA32007A265D /* WuranModeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0092282B1EDFAA32007A265D /* WuranModeViewController.xib */; };
+		009228301EDFAC14007A265D /* MianButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092282F1EDFAC14007A265D /* MianButton.m */; };
 		009580731ED8255D0037377D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009580711ED8255D0037377D /* LoginViewController.m */; };
 		009580741ED8255D0037377D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009580721ED8255D0037377D /* LoginViewController.xib */; };
 		009580791ED833DE0037377D /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 009580771ED833DE0037377D /* RegisterViewController.m */; };
@@ -95,6 +103,19 @@
 		004246A01ED5D21A0058878C /* DevieceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevieceViewController.m; sourceTree = "<group>"; };
 		004246A21ED5D24D0058878C /* XMnavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMnavigationController.h; sourceTree = "<group>"; };
 		004246A31ED5D24D0058878C /* XMnavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMnavigationController.m; sourceTree = "<group>"; };
+		0092281A1EDE7DA8007A265D /* XMSocktManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSocktManager.h; sourceTree = "<group>"; };
+		0092281B1EDE7DA8007A265D /* XMSocktManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSocktManager.m; sourceTree = "<group>"; };
+		0092281E1EDEA8FB007A265D /* WeekModelViewControolerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekModelViewControolerViewController.h; sourceTree = "<group>"; };
+		0092281F1EDEA8FB007A265D /* WeekModelViewControolerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekModelViewControolerViewController.m; sourceTree = "<group>"; };
+		009228201EDEA8FB007A265D /* WeekModelViewControolerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekModelViewControolerViewController.xib; sourceTree = "<group>"; };
+		009228231EDEC137007A265D /* XMdatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMdatePickerView.h; sourceTree = "<group>"; };
+		009228241EDEC137007A265D /* XMdatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMdatePickerView.m; sourceTree = "<group>"; };
+		009228251EDEC137007A265D /* XMdatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMdatePickerView.xib; sourceTree = "<group>"; };
+		009228291EDFAA32007A265D /* WuranModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WuranModeViewController.h; sourceTree = "<group>"; };
+		0092282A1EDFAA32007A265D /* WuranModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WuranModeViewController.m; sourceTree = "<group>"; };
+		0092282B1EDFAA32007A265D /* WuranModeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WuranModeViewController.xib; sourceTree = "<group>"; };
+		0092282E1EDFAC14007A265D /* MianButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MianButton.h; sourceTree = "<group>"; };
+		0092282F1EDFAC14007A265D /* MianButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MianButton.m; sourceTree = "<group>"; };
 		009580701ED8255D0037377D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		009580711ED8255D0037377D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		009580721ED8255D0037377D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -270,6 +291,8 @@
 				009580B31ED880900037377D /* XMSuperHelper.m */,
 				009580881ED83AE60037377D /* Apputil.h */,
 				009580891ED83AE60037377D /* Apputil.m */,
+				0092281A1EDE7DA8007A265D /* XMSocktManager.h */,
+				0092281B1EDE7DA8007A265D /* XMSocktManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -322,8 +345,33 @@
 				004246A31ED5D24D0058878C /* XMnavigationController.m */,
 				0042469C1ED5D1E90058878C /* XMTabBarController.h */,
 				0042469D1ED5D1E90058878C /* XMTabBarController.m */,
+				0092282E1EDFAC14007A265D /* MianButton.h */,
+				0092282F1EDFAC14007A265D /* MianButton.m */,
 			);
 			path = Mian;
+			sourceTree = "<group>";
+		};
+		0092281D1EDEA8A9007A265D /* 儿童周末模式 */ = {
+			isa = PBXGroup;
+			children = (
+				009228231EDEC137007A265D /* XMdatePickerView.h */,
+				009228241EDEC137007A265D /* XMdatePickerView.m */,
+				009228251EDEC137007A265D /* XMdatePickerView.xib */,
+				0092281E1EDEA8FB007A265D /* WeekModelViewControolerViewController.h */,
+				0092281F1EDEA8FB007A265D /* WeekModelViewControolerViewController.m */,
+				009228201EDEA8FB007A265D /* WeekModelViewControolerViewController.xib */,
+			);
+			path = "儿童周末模式";
+			sourceTree = "<group>";
+		};
+		009228281EDFA9F6007A265D /* 污染模式 */ = {
+			isa = PBXGroup;
+			children = (
+				009228291EDFAA32007A265D /* WuranModeViewController.h */,
+				0092282A1EDFAA32007A265D /* WuranModeViewController.m */,
+				0092282B1EDFAA32007A265D /* WuranModeViewController.xib */,
+			);
+			path = "污染模式";
 			sourceTree = "<group>";
 		};
 		0095806F1ED825430037377D /* 登陆 */ = {
@@ -398,6 +446,8 @@
 		009998961EDC0B6C00FF7073 /* 环境监测 */ = {
 			isa = PBXGroup;
 			children = (
+				009228281EDFA9F6007A265D /* 污染模式 */,
+				0092281D1EDEA8A9007A265D /* 儿童周末模式 */,
 				009998A11EDC15D900FF7073 /* EnvironmentVC.h */,
 				009998A21EDC15D900FF7073 /* EnvironmentVC.m */,
 				009998A31EDC15D900FF7073 /* EnvironmentVC.xib */,
@@ -547,10 +597,12 @@
 				001487F91ED921020071F4D7 /* ChangePasswordViewController.xib in Resources */,
 				009998A81EDC215F00FF7073 /* Provineces.plist in Resources */,
 				009580741ED8255D0037377D /* LoginViewController.xib in Resources */,
+				009228271EDEC137007A265D /* XMdatePickerView.xib in Resources */,
 				009998A51EDC15D900FF7073 /* EnvironmentVC.xib in Resources */,
 				009998B01EDD2AF500FF7073 /* EnviroHeaderView.xib in Resources */,
 				009580861ED83AC30037377D /* SVProgressHUD.bundle in Resources */,
 				0095807A1ED833DE0037377D /* RegisterViewController.xib in Resources */,
+				009228221EDEA8FB007A265D /* WeekModelViewControolerViewController.xib in Resources */,
 				0014880D1ED955870071F4D7 /* EquipDetailViewController.xib in Resources */,
 				00F3B3381ED3ED9800815877 /* LaunchScreen.storyboard in Resources */,
 				00F3B3351ED3ED9800815877 /* Assets.xcassets in Resources */,
@@ -558,6 +610,7 @@
 				009998951EDC07DC00FF7073 /* DevieceCell.xib in Resources */,
 				001488021ED94D9A0071F4D7 /* AddEquipCell.xib in Resources */,
 				00F3B3331ED3ED9800815877 /* Main.storyboard in Resources */,
+				0092282D1EDFAA32007A265D /* WuranModeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,8 +674,10 @@
 				009580B91ED880900037377D /* MASViewConstraint.m in Sources */,
 				0095808F1ED863620037377D /* UserModel.m in Sources */,
 				009580B51ED880900037377D /* MASConstraint.m in Sources */,
+				009228211EDEA8FB007A265D /* WeekModelViewControolerViewController.m in Sources */,
 				009998A41EDC15D900FF7073 /* EnvironmentVC.m in Sources */,
 				009998941EDC07DC00FF7073 /* DevieceCell.m in Sources */,
+				0092281C1EDE7DA8007A265D /* XMSocktManager.m in Sources */,
 				009580731ED8255D0037377D /* LoginViewController.m in Sources */,
 				009580921ED864830037377D /* LoginTool.m in Sources */,
 				009580871ED83AC30037377D /* SVProgressHUD.m in Sources */,
@@ -642,11 +697,14 @@
 				009580B41ED880900037377D /* MASCompositeConstraint.m in Sources */,
 				009580B71ED880900037377D /* MASLayoutConstraint.m in Sources */,
 				009580BE1ED880900037377D /* WYNetTool.m in Sources */,
+				009228301EDFAC14007A265D /* MianButton.m in Sources */,
+				0092282C1EDFAA32007A265D /* WuranModeViewController.m in Sources */,
 				001488011ED94D9A0071F4D7 /* AddEquipCell.m in Sources */,
 				004246A11ED5D21A0058878C /* DevieceViewController.m in Sources */,
 				009998AB1EDC225800FF7073 /* CityChoseView.m in Sources */,
 				004246A41ED5D24D0058878C /* XMnavigationController.m in Sources */,
 				0014880C1ED955870071F4D7 /* EquipDetailViewController.m in Sources */,
+				009228261EDEC137007A265D /* XMdatePickerView.m in Sources */,
 				009580B61ED880900037377D /* MASConstraintMaker.m in Sources */,
 				009580BA1ED880900037377D /* NSArray+MASAdditions.m in Sources */,
 				00F3B32A1ED3ED9800815877 /* main.m in Sources */,
