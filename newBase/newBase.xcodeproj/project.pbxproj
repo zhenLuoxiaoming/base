@@ -24,6 +24,15 @@
 		0042469E1ED5D1E90058878C /* XMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0042469D1ED5D1E90058878C /* XMTabBarController.m */; };
 		004246A11ED5D21A0058878C /* DevieceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004246A01ED5D21A0058878C /* DevieceViewController.m */; };
 		004246A41ED5D24D0058878C /* XMnavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004246A31ED5D24D0058878C /* XMnavigationController.m */; };
+		004E879C1EE011F7006BBDAB /* UploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E879B1EE011F7006BBDAB /* UploadViewController.m */; };
+		004E87AE1EE016F4006BBDAB /* JFAssetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E879F1EE016F4006BBDAB /* JFAssetHelper.m */; };
+		004E87AF1EE016F4006BBDAB /* JFImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E87A11EE016F4006BBDAB /* JFImageCollectionViewController.m */; };
+		004E87B01EE016F4006BBDAB /* JFImageGroupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E87A31EE016F4006BBDAB /* JFImageGroupTableViewController.m */; };
+		004E87B11EE016F4006BBDAB /* JFImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E87A51EE016F4006BBDAB /* JFImageManager.m */; };
+		004E87B21EE016F4006BBDAB /* JFImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E87A71EE016F4006BBDAB /* JFImagePickerController.m */; };
+		004E87B31EE016F4006BBDAB /* JFImagePickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E87A91EE016F4006BBDAB /* JFImagePickerViewCell.m */; };
+		004E87B41EE016F4006BBDAB /* JFPhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E87AB1EE016F4006BBDAB /* JFPhotoBrowserViewController.m */; };
+		004E87B51EE016F4006BBDAB /* JFPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 004E87AD1EE016F4006BBDAB /* JFPhotoView.m */; };
 		0092281C1EDE7DA8007A265D /* XMSocktManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092281B1EDE7DA8007A265D /* XMSocktManager.m */; };
 		009228211EDEA8FB007A265D /* WeekModelViewControolerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092281F1EDEA8FB007A265D /* WeekModelViewControolerViewController.m */; };
 		009228221EDEA8FB007A265D /* WeekModelViewControolerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 009228201EDEA8FB007A265D /* WeekModelViewControolerViewController.xib */; };
@@ -127,6 +136,24 @@
 		004246A01ED5D21A0058878C /* DevieceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevieceViewController.m; sourceTree = "<group>"; };
 		004246A21ED5D24D0058878C /* XMnavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMnavigationController.h; sourceTree = "<group>"; };
 		004246A31ED5D24D0058878C /* XMnavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMnavigationController.m; sourceTree = "<group>"; };
+		004E879A1EE011F7006BBDAB /* UploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadViewController.h; sourceTree = "<group>"; };
+		004E879B1EE011F7006BBDAB /* UploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadViewController.m; sourceTree = "<group>"; };
+		004E879E1EE016F4006BBDAB /* JFAssetHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFAssetHelper.h; sourceTree = "<group>"; };
+		004E879F1EE016F4006BBDAB /* JFAssetHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFAssetHelper.m; sourceTree = "<group>"; };
+		004E87A01EE016F4006BBDAB /* JFImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageCollectionViewController.h; sourceTree = "<group>"; };
+		004E87A11EE016F4006BBDAB /* JFImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageCollectionViewController.m; sourceTree = "<group>"; };
+		004E87A21EE016F4006BBDAB /* JFImageGroupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageGroupTableViewController.h; sourceTree = "<group>"; };
+		004E87A31EE016F4006BBDAB /* JFImageGroupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageGroupTableViewController.m; sourceTree = "<group>"; };
+		004E87A41EE016F4006BBDAB /* JFImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImageManager.h; sourceTree = "<group>"; };
+		004E87A51EE016F4006BBDAB /* JFImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImageManager.m; sourceTree = "<group>"; };
+		004E87A61EE016F4006BBDAB /* JFImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImagePickerController.h; sourceTree = "<group>"; };
+		004E87A71EE016F4006BBDAB /* JFImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerController.m; sourceTree = "<group>"; };
+		004E87A81EE016F4006BBDAB /* JFImagePickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFImagePickerViewCell.h; sourceTree = "<group>"; };
+		004E87A91EE016F4006BBDAB /* JFImagePickerViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFImagePickerViewCell.m; sourceTree = "<group>"; };
+		004E87AA1EE016F4006BBDAB /* JFPhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoBrowserViewController.h; sourceTree = "<group>"; };
+		004E87AB1EE016F4006BBDAB /* JFPhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoBrowserViewController.m; sourceTree = "<group>"; };
+		004E87AC1EE016F4006BBDAB /* JFPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFPhotoView.h; sourceTree = "<group>"; };
+		004E87AD1EE016F4006BBDAB /* JFPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFPhotoView.m; sourceTree = "<group>"; };
 		0092281A1EDE7DA8007A265D /* XMSocktManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMSocktManager.h; sourceTree = "<group>"; };
 		0092281B1EDE7DA8007A265D /* XMSocktManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMSocktManager.m; sourceTree = "<group>"; };
 		0092281E1EDEA8FB007A265D /* WeekModelViewControolerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekModelViewControolerViewController.h; sourceTree = "<group>"; };
@@ -340,6 +367,7 @@
 		0042465A1ED5C8BB0058878C /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				004E879D1EE016F4006BBDAB /* JFImagePickerController */,
 				009228421EDFC5CF007A265D /* FSCalendar */,
 				0095807E1ED83AC30037377D /* SVProgressHUD */,
 				0095807B1ED838D10037377D /* JKCountDownButton.h */,
@@ -423,6 +451,38 @@
 			path = Mian;
 			sourceTree = "<group>";
 		};
+		004E87991EE011E1006BBDAB /* 上传头像 */ = {
+			isa = PBXGroup;
+			children = (
+				004E879A1EE011F7006BBDAB /* UploadViewController.h */,
+				004E879B1EE011F7006BBDAB /* UploadViewController.m */,
+			);
+			path = "上传头像";
+			sourceTree = "<group>";
+		};
+		004E879D1EE016F4006BBDAB /* JFImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				004E879E1EE016F4006BBDAB /* JFAssetHelper.h */,
+				004E879F1EE016F4006BBDAB /* JFAssetHelper.m */,
+				004E87A01EE016F4006BBDAB /* JFImageCollectionViewController.h */,
+				004E87A11EE016F4006BBDAB /* JFImageCollectionViewController.m */,
+				004E87A21EE016F4006BBDAB /* JFImageGroupTableViewController.h */,
+				004E87A31EE016F4006BBDAB /* JFImageGroupTableViewController.m */,
+				004E87A41EE016F4006BBDAB /* JFImageManager.h */,
+				004E87A51EE016F4006BBDAB /* JFImageManager.m */,
+				004E87A61EE016F4006BBDAB /* JFImagePickerController.h */,
+				004E87A71EE016F4006BBDAB /* JFImagePickerController.m */,
+				004E87A81EE016F4006BBDAB /* JFImagePickerViewCell.h */,
+				004E87A91EE016F4006BBDAB /* JFImagePickerViewCell.m */,
+				004E87AA1EE016F4006BBDAB /* JFPhotoBrowserViewController.h */,
+				004E87AB1EE016F4006BBDAB /* JFPhotoBrowserViewController.m */,
+				004E87AC1EE016F4006BBDAB /* JFPhotoView.h */,
+				004E87AD1EE016F4006BBDAB /* JFPhotoView.m */,
+			);
+			path = JFImagePickerController;
+			sourceTree = "<group>";
+		};
 		0092281D1EDEA8A9007A265D /* 儿童周末模式 */ = {
 			isa = PBXGroup;
 			children = (
@@ -449,6 +509,7 @@
 		009228311EDFB1AB007A265D /* 我 */ = {
 			isa = PBXGroup;
 			children = (
+				004E87991EE011E1006BBDAB /* 上传头像 */,
 				0092283B1EDFBC34007A265D /* 意见与反馈 */,
 				009228371EDFB603007A265D /* 解绑 */,
 				009228321EDFB1CE007A265D /* MeViewController.h */,
@@ -826,8 +887,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004E87AE1EE016F4006BBDAB /* JFAssetHelper.m in Sources */,
 				009580851ED83AC30037377D /* SVIndefiniteAnimatedView.m in Sources */,
 				009228641EDFC5CF007A265D /* FSCalendar+Deprecated.m in Sources */,
+				004E87B11EE016F4006BBDAB /* JFImageManager.m in Sources */,
 				001487FD1ED931410071F4D7 /* AddEquipViewController.m in Sources */,
 				009580B91ED880900037377D /* MASViewConstraint.m in Sources */,
 				009228661EDFC5CF007A265D /* FSCalendarAppearance.m in Sources */,
@@ -839,6 +902,7 @@
 				0092286E1EDFC5CF007A265D /* FSCalendarExtensions.m in Sources */,
 				009998941EDC07DC00FF7073 /* DevieceCell.m in Sources */,
 				0092281C1EDE7DA8007A265D /* XMSocktManager.m in Sources */,
+				004E87B51EE016F4006BBDAB /* JFPhotoView.m in Sources */,
 				0092286A1EDFC5CF007A265D /* FSCalendarCollectionViewLayout.m in Sources */,
 				009228771EDFC5DC007A265D /* QianDaoViewController.m in Sources */,
 				009228351EDFB1CE007A265D /* MeViewController.m in Sources */,
@@ -867,10 +931,13 @@
 				009580B71ED880900037377D /* MASLayoutConstraint.m in Sources */,
 				0092286D1EDFC5CF007A265D /* FSCalendarDelegationProxy.m in Sources */,
 				009580BE1ED880900037377D /* WYNetTool.m in Sources */,
+				004E87B41EE016F4006BBDAB /* JFPhotoBrowserViewController.m in Sources */,
+				004E87AF1EE016F4006BBDAB /* JFImageCollectionViewController.m in Sources */,
 				0092286B1EDFC5CF007A265D /* FSCalendarConstants.m in Sources */,
 				009228301EDFAC14007A265D /* MianButton.m in Sources */,
 				0092282C1EDFAA32007A265D /* WuranModeViewController.m in Sources */,
 				001488011ED94D9A0071F4D7 /* AddEquipCell.m in Sources */,
+				004E879C1EE011F7006BBDAB /* UploadViewController.m in Sources */,
 				004246A11ED5D21A0058878C /* DevieceViewController.m in Sources */,
 				009998AB1EDC225800FF7073 /* CityChoseView.m in Sources */,
 				004246A41ED5D24D0058878C /* XMnavigationController.m in Sources */,
@@ -878,11 +945,14 @@
 				0014880C1ED955870071F4D7 /* EquipDetailViewController.m in Sources */,
 				009228701EDFC5CF007A265D /* FSCalendarScopeHandle.m in Sources */,
 				009228261EDEC137007A265D /* XMdatePickerView.m in Sources */,
+				004E87B21EE016F4006BBDAB /* JFImagePickerController.m in Sources */,
 				009580B61ED880900037377D /* MASConstraintMaker.m in Sources */,
 				009580BA1ED880900037377D /* NSArray+MASAdditions.m in Sources */,
 				00F3B32A1ED3ED9800815877 /* main.m in Sources */,
 				009228651EDFC5CF007A265D /* FSCalendar.m in Sources */,
 				009998AE1EDD2ADC00FF7073 /* EnviroHeaderView.m in Sources */,
+				004E87B31EE016F4006BBDAB /* JFImagePickerViewCell.m in Sources */,
+				004E87B01EE016F4006BBDAB /* JFImageGroupTableViewController.m in Sources */,
 				009228731EDFC5CF007A265D /* FSCalendarWeekdayView.m in Sources */,
 				0042469E1ED5D1E90058878C /* XMTabBarController.m in Sources */,
 				009228721EDFC5CF007A265D /* FSCalendarTransitionCoordinator.m in Sources */,

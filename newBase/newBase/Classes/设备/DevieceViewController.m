@@ -28,7 +28,9 @@
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableFooterView = [[UIView alloc]init];
+        self.BaseTableView = _tableView;
         [_tableView registerNib:[UINib nibWithNibName:@"DevieceCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
+        [self addXMHeaderRefrsh];
     }
     return _tableView;
 }
@@ -38,6 +40,10 @@
 //    [self showLogin];
     [self setUpUI];
     
+}
+
+-(void)XMPullDownRefrsh {
+    [self getBandEquipData];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -57,12 +63,21 @@
                                @"userId" : [LoginTool shareInstance].userModel.ID
                                };
         [WYNetTool GET_Urlstring:getBandEquip parameters:dic success:^(id responseObject) {
+            
+            if (errorCode) {
+                [Apputil showError:@"没有设备"];
+                return ;
+            }
             self.dataArray = responseObject[@"data"];
             [self.view addSubview:self.tableView];
+            self.isHeaderReresh = NO;
             [Apputil dismiss];
         } fail:^(id error) {
+            self.isHeaderReresh = NO;
             [Apputil showError:@"网络出错"];
         }];
+    } else {
+        [self.tableView removeFromSuperview];
     }
 }
 #pragma -mark:tableDelegate

@@ -128,7 +128,7 @@
         [button setTitle:title forState:UIControlStateNormal];
     }
     if (selector) {
-      [button addTarget:target action:@selector(selector) forControlEvents:UIControlEventTouchUpInside];
+      [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     }
     return button;
 }

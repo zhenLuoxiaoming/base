@@ -7,6 +7,14 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+    <key>NSCalendarsUsageDescription</key>
+    <string>日历</string>
+    <key>NSCameraUsageDescription</key>
+    <string>相机</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>YES</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>相册</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *jiadangButton;
 @property (weak, nonatomic) IBOutlet UIButton *shoudongButton;
 @property (weak, nonatomic) IBOutlet UILabel *shineiPmLable;
+@property (weak, nonatomic) IBOutlet UILabel *rumtimeLable;
 
 @end
 
@@ -75,6 +76,18 @@
     self.hengwenButton.selected = [Bdata[@"heating"] isEqualToString:@"1"];
 }
 
+-(void)setRumtimeData:(NSArray *)rumtimeData {
+    _rumtimeData = rumtimeData;
+    NSDictionary * dic = [rumtimeData lastObject];
+    NSString * timestr = dic[@"this_time"];
+    
+    long time = [timestr longLongValue];
+    long h = time / 60 / 60 ;
+    long m = (time / 60 ) % 60;
+    self.rumtimeLable.text = [NSString stringWithFormat:@"%ld小时%ld分",h,m];
+}
+
+
 - (IBAction)btnClick:(UIButton *)sender {
     if (sender.tag == 104 ) {
         [[XMSocktManager shareInstance]  sendDirectorWithA:1 b:self.kaidengButton.selected c:self.hengwenButton.selected d:1];
@@ -87,6 +100,8 @@
     sender.selected = !sender.selected;
     [[XMSocktManager shareInstance]  sendDirectorWithA:1 b:self.kaidengButton.selected c:self.hengwenButton.selected d:2];
 }
+
+
 
 
 - (IBAction)shoudongButtonCLick:(id)sender {

@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (weak, nonatomic) IBOutlet UILabel *contentLable;
 
+
 @end
 
 @implementation WeekModelViewControolerViewController
@@ -25,8 +26,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     if ([self.title isEqualToString:@"儿童模式"]) {
-        
+        self.contentLable.text = @"为您的孩子设计独立模式，在睡眠前自动开启1小时高效净化，让您的孩子呼吸着新鲜空气安然睡一整晚";
     }else {
+        self.contentLable.text = @"周末白天，好心情，周末白天安静开启，给您轻松健康的周末体验";
         self.headImageView.image = [UIImage imageNamed:@"zhoumomoshi"];
     }
     [self clipButton:self.oepnButton];

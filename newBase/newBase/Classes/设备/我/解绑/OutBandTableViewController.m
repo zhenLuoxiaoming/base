@@ -28,6 +28,10 @@
                                @"userId" : [LoginTool shareInstance].userModel.ID
                                };
         [WYNetTool GET_Urlstring:getBandEquip parameters:dic success:^(id responseObject) {
+            if (errorCode) {
+                [Apputil showError:@"没有设备"];
+                return ;
+            }
             self.dataArray = responseObject[@"data"];
             [self.tableView reloadData];
             [Apputil dismiss];
@@ -75,7 +79,7 @@
 -(void)showAlert:(NSInteger)tag {
     UIAlertController * vc = [UIAlertController alertControllerWithTitle:@"提示" message:@"确定要解除该设备?" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction * yes = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        [self jiebangEquip:self.dataArray[tag][@"equip_id"]];
+        [self jiebangEquip:self.dataArray[tag][@"equip_number"]];
     }];
     UIAlertAction * no = [UIAlertAction actionWithTitle:@"取消" style:0 handler:nil];
     [vc addAction:yes];

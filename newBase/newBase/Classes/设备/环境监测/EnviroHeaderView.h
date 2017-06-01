@@ -13,8 +13,7 @@
 @property (nonatomic,strong) NSDictionary *data;
 @property (nonatomic,strong) NSDictionary *Adata;
 @property (nonatomic,strong) NSDictionary *Bdata;
-
-
+@property (nonatomic,strong) NSArray *rumtimeData;
 
 +(instancetype)fastLogin;
 @end

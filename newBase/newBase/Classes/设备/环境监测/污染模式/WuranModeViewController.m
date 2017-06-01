@@ -10,6 +10,7 @@
 
 @interface WuranModeViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *ugTextFeild;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 
 @end
 
@@ -17,14 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"污染模式";
     self.ugTextFeild.layer.borderWidth = 1;
     self.ugTextFeild.layer.borderColor = ColorDefault.CGColor;
+    self.contentLabel.text = @"根据室内空气质量，自动开启空气进化，让您随时随地处在优质的生活环境当中。";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 /*
 #pragma mark - Navigation

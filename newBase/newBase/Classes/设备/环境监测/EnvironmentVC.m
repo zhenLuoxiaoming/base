@@ -20,6 +20,7 @@
 @property (nonatomic,strong) NSArray *stringArray;
 @property (nonatomic,strong) NSString *currentCity;
 @property (nonatomic,strong) UIButton *cityButton;
+@property (nonatomic,strong) UIButton *openButton;
 @end
 @implementation EnvironmentVC
 
@@ -34,6 +35,7 @@
 -(UITableView *)tableView {
     if (_tableView == nil) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - 50) style:UITableViewStylePlain];
+        _tableView.tableFooterView = [[UIView alloc]init];
     }
     return _tableView;
 }
@@ -48,6 +50,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"环境监测";
     self.currentCity = @"成都";
     self.stringArray = @[@"儿童模式",@"周末模式",@"污染模式",@"历史数据"];
     [self setUpUI];
@@ -75,6 +78,7 @@
         make.centerY.equalTo(footer);
         make.height.equalTo(@35);
     }];
+    self.openButton = btn;
     [btn setTitleColor:ColorDefault forState:UIControlStateNormal];
     [btn setTitleColor:ColorDefault forState:UIControlStateSelected];
     btn.layer.cornerRadius = 5;
@@ -88,7 +92,6 @@
     sender.selected = !sender.selected;
     [[XMSocktManager shareInstance] sendDirectorWithA:sender.selected b:0 c:0 d:2];
 }
-
 
 -(void)setStaticUI {
     UIButton * btn = [[UIButton alloc]init];
@@ -116,11 +119,6 @@
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
 }
-
--(void)setHeaderView {
-    
-}
-
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return  4;
@@ -157,7 +155,8 @@
 
 -(void)getAInfo {
     [XMSocktManager shareInstance].delegate = self;
-    [[XMSocktManager shareInstance] sendMessageWithEquipID:@"CDHS100000003"];
+    [[XMSocktManager shareInstance] sendMessageWithEquipID:self.data[@"equip_number"]];//@"CDHS100000003"];
+    [self getRuntime];
 }
 
 #pragma -mark:xmsocktDelegate
@@ -166,7 +165,25 @@
 }
 
 -(void)XMSocktManagerGetBWithData:(NSDictionary *)data {
+    self.openButton.selected = [data[@"fan"] isEqualToString:@"1"];
     self.headerView.Bdata = data;
+}
+
+
+-(void)getRuntime {
+    NSDictionary * dic = @{
+                           @"equipId" :self.data[@"equip_number"]// @"CDHS100000003"
+                           };
+    
+    [WYNetTool GET_Urlstring:rumtimeUrl parameters:dic success:^(id responseObject) {
+        if (errorCode) {
+            [Apputil showError:@"错误"];
+            return ;
+        }
+        self.headerView.rumtimeData = responseObject[@"data"];
+    } fail:^(id error) {
+        [Apputil showError:@"网络错误"];
+    }];
 }
 
 -(void)getWeather {

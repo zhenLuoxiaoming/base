@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MeViewController">
             <connections>
+                <outlet property="headimageButton" destination="fnO-ha-Cly" id="H42-E9-M4U"/>
+                <outlet property="nameLale" destination="A0M-ph-Z7k" id="jKS-CC-5xp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,8 +23,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnO-ha-Cly">
-                    <rect key="frame" x="125" y="40" width="124" height="90"/>
+                    <rect key="frame" x="142" y="40" width="90" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="QJZ-aU-Jfu"/>
+                        <constraint firstAttribute="height" constant="90" id="m0j-3e-XjJ"/>
+                    </constraints>
                     <state key="normal" image="defaulthead"/>
+                    <connections>
+                        <action selector="headButtonClick:" destination="-1" eventType="touchUpInside" id="96M-1D-XdY"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A0M-ph-Z7k">
                     <rect key="frame" x="166" y="140" width="42" height="21"/>
@@ -167,7 +176,7 @@
                 <constraint firstAttribute="trailing" secondItem="ewt-QB-Je6" secondAttribute="trailing" id="iwE-OH-kic"/>
                 <constraint firstItem="fnO-ha-Cly" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="zG1-Zb-nwV"/>
             </constraints>
-            <point key="canvasLocation" x="-174.5" y="-55.5"/>
+            <point key="canvasLocation" x="-480" y="-87"/>
         </view>
     </objects>
     <resources>

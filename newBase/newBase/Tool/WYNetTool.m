@@ -246,53 +246,16 @@ static NSMutableArray *tasks;
                    uploadProgressBlock:(void (^)(float percent, long long totalBytesWritten, long long totalBytesExpectedToWrite))uploadProgressBlock{
     
     if (images.count == 0) {
-        NSLog(@"上传内容没有包含图片");
+        //商家必须至少添加一张图片
+//        [Apputil showError:@"亲~请在活动描述中至少添加一张图片哦~"];
         return;
     }
     for (int i = 0; i < images.count; i++) {
         if (![images[i] isKindOfClass:[UIImage class]]) {
-            NSLog(@"images中第%d个元素不是UIImage对象",i+1);
             return;
         }
     }
     
-//    AFHTTPRequestOperation *operation = [[self sharedOperation].operationManager POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
-//        
-//        int i = 0;
-//        //根据当前系统时间生成图片名称
-//        NSDate *date = [NSDate date];
-//        NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-//        [formatter setDateFormat:@"yyyy年MM月dd日"];
-//        NSString *dateString = [formatter stringFromDate:date];
-//        
-//        for (UIImage *image in images) {
-//            NSString *fileName = [NSString stringWithFormat:@"%@%d.png",dateString,i];
-//            NSData *imageData;
-//            if (ratio > 0.0f && ratio < 1.0f) {
-//                imageData = UIImageJPEGRepresentation(image, ratio);
-//            }else{
-//                imageData = UIImageJPEGRepresentation(image, 1.0f);
-//            }
-//            
-//            [formData appendPartWithFileData:imageData name:parameter fileName:fileName mimeType:@"image/jpg/png/jpeg"];
-//        }
-//        
-//        
-//    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        succeedBlock(operation,responseObject);
-//        
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        NSLog(@"%@",error);
-//        failedBlock(operation,error);
-//        
-//    }];
-//    
-//    [operation setUploadProgressBlock:^(NSUInteger bytesWritten, long long totalBytesWritten, long long totalBytesExpectedToWrite) {
-//        CGFloat percent = totalBytesWritten * 1.0 / totalBytesExpectedToWrite;
-//        uploadProgressBlock(percent,totalBytesWritten,totalBytesExpectedToWrite);
-//    }];
-    
-
     NSURLSessionTask *task = [[self shareAFManager] POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         int i = 0;
         //根据当前系统时间生成图片名称
@@ -300,9 +263,11 @@ static NSMutableArray *tasks;
         NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
         [formatter setDateFormat:@"yyyy年MM月dd日"];
         NSString *dateString = [formatter stringFromDate:date];
-
+        
+        
         for (UIImage *image in images) {
             NSString *fileName = [NSString stringWithFormat:@"%@%d.png",dateString,i];
+            i++;
             NSData *imageData;
             if (ratio > 0.0f && ratio < 1.0f) {
                 imageData = UIImageJPEGRepresentation(image, ratio);
@@ -313,8 +278,7 @@ static NSMutableArray *tasks;
         }
         
     } progress:^(NSProgress * _Nonnull uploadProgress) {
-//        CGFloat percent = totalBytesWritten * 1.0 / totalBytesExpectedToWrite;
-//        uploadProgressBlock(percent,totalBytesWritten,totalBytesExpectedToWrite);
+        
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         succeedBlock(task,responseObject);
         
@@ -323,30 +287,7 @@ static NSMutableArray *tasks;
     }];
     [task resume];
     
-//    NSURLSessionTask *sessionTask = [[self shareAFManager] GET:url parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-//        int i = 0;
-//        //根据当前系统时间生成图片名称
-//        NSDate *date = [NSDate date];
-//        NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-//        [formatter setDateFormat:@"yyyy年MM月dd日"];
-//        NSString *dateString = [formatter stringFromDate:date];
-//        
-//        for (UIImage *image in images) {
-//            NSString *fileName = [NSString stringWithFormat:@"%@%d.png",dateString,i];
-//            NSData *imageData;
-//            if (ratio > 0.0f && ratio < 1.0f) {
-//                imageData = UIImageJPEGRepresentation(image, ratio);
-//            }else{
-//                imageData = UIImageJPEGRepresentation(image, 1.0f);
-//            }
-//            [formData appendPartWithFileData:imageData name:parameter fileName:fileName mimeType:@"image/jpg/png/jpeg"];
-//        }
-//    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        
-//    }];
-    
+  
 }
 
 

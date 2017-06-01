@@ -360,6 +360,7 @@
                 <outlet property="jiandangButton" destination="6Jn-ou-6Db" id="YWr-cf-wo2"/>
                 <outlet property="kaidengButton" destination="Rbi-ii-8kL" id="oTc-DD-Cbn"/>
                 <outlet property="pingfenLable" destination="4n6-gv-yFM" id="IxR-N0-Rmx"/>
+                <outlet property="rumtimeLable" destination="Cp8-vO-eNH" id="2pd-kD-1EQ"/>
                 <outlet property="secondLable" destination="tvC-gD-Q2P" id="YRu-s3-Bzw"/>
                 <outlet property="shiduLable" destination="ZhG-s6-hky" id="LSn-sf-OjE"/>
                 <outlet property="shineiPmLable" destination="51k-hI-kzP" id="Phg-VN-dFp"/>

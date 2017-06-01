@@ -22,4 +22,8 @@
 #define jiebang @"http://119.23.45.80/Demo/public/Index/removeEquip"
 
 #define feebackurl @"http://119.23.45.80/Demo/public/Index/feedBack"
+#define rumtimeUrl @"http://119.23.45.80/Demo/public/Index/runTime"
+
+#define uploadImageUrl @"http://119.23.45.80/Demo/public/Index/updateHeadImg"
+
 #endif /* ServiceUrl_h */

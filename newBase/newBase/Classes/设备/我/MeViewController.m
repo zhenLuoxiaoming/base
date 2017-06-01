@@ -9,7 +9,12 @@
 #import "MeViewController.h"
 #import "OutBandTableViewController.h"
 #import "FeedBackViewController.h"
+#import <UIButton+WebCache.h>
+#import "UploadViewController.h"
+
 @interface MeViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *headimageButton;
+@property (weak, nonatomic) IBOutlet UILabel *nameLale;
 
 @end
 
@@ -17,7 +22,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self.headimageButton sd_setImageWithURL:[NSURL URLWithString:[LoginTool shareInstance].userModel.user_img] forState:UIControlStateNormal];
+    self.nameLale.text = [LoginTool shareInstance].userModel.nickname;
+    self.headimageButton.layer.cornerRadius = 45;
+    self.headimageButton.layer.masksToBounds = YES;
+    self.headimageButton.layer.borderWidth = 1;
+    self.headimageButton.layer.borderColor = [UIColor blackColor].CGColor;
+
 }
 - (IBAction)loginOutButtonClick:(id)sender {
     [[LoginTool shareInstance] loginOut];
@@ -30,6 +41,11 @@
 }
 - (IBAction)adviceButtonClick:(id)sender {
     FeedBackViewController * vc = [[FeedBackViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)headButtonClick:(id)sender {
+    UploadViewController * vc = [[UploadViewController alloc]init];
+    
     [self.navigationController pushViewController:vc animated:YES];
 }
 

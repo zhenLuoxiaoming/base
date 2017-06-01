@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WuranModeViewController">
             <connections>
+                <outlet property="contentLabel" destination="jzy-Mj-dge" id="6eI-9b-IIu"/>
                 <outlet property="ugTextFeild" destination="eUL-0f-xRX" id="2YB-YN-DHU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,13 +29,13 @@
                     </constraints>
                     <state key="normal" title="确定"/>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BrR-WO-xAV">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cs" translatesAutoresizingMaskIntoConstraints="NO" id="BrR-WO-xAV">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VwK-Cw-E41">
                     <rect key="frame" x="0.0" y="267" width="375" height="150"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzy-Mj-dge">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzy-Mj-dge">
                             <rect key="frame" x="20" y="20" width="335" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.41219785809516907" green="0.6754949688911438" blue="0.50051814317703247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,4 +95,7 @@
             <point key="canvasLocation" x="-132.5" y="-152.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="cs" width="754" height="289"/>
+    </resources>
 </document>
