@@ -11,9 +11,12 @@
 #import "AddEquipViewController.h"
 #import "DevieceCell.h"
 #import "EnvironmentVC.h"
+#import "MeViewController.h"
 @interface DevieceViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong)UITableView * tableView;
 @property (nonatomic,strong) NSArray *dataArray;
+@property (nonatomic,strong) UIImageView *headImageView;
+@property (nonatomic,strong) UILabel *headLabel;
 
 @end
 
@@ -40,6 +43,7 @@
 -(void)viewWillAppear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     [self getBandEquipData];
+    [self changeHeadView];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -99,7 +103,11 @@
         make.bottom.equalTo(navView).offset(-10);
         make.height.width.equalTo(@40);
     }];
-    
+    self.headImageView = headImageView;
+    headImageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]init];
+    [headImageView addGestureRecognizer:tap];
+    [tap addTarget:self action:@selector(tapClick)];
     UILabel * NameLabel = [[UILabel alloc]init];
     NameLabel.textColor = XMColor(104, 173, 128);
     if ([[LoginTool shareInstance] isLogin]) {
@@ -107,6 +115,7 @@
     }else {
         NameLabel.text = @"请登录";
     }
+    self.headLabel = NameLabel;
     [navView addSubview:NameLabel];
     [NameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.equalTo(headImageView.mas_centerY);
@@ -137,6 +146,23 @@
     noEqumLabel.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:noEqumLabel];
     noEqumLabel.center = self.view.center;
+}
+
+-(void)changeHeadView {
+    if ([[LoginTool shareInstance] isLogin]) {
+        self.headLabel.text = [LoginTool shareInstance].userModel.nickname;
+    }else {
+        self.headLabel.text = @"请登录";
+    }
+    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:[LoginTool shareInstance].userModel.user_img] placeholderImage:nil];
+}
+
+
+-(void)tapClick {
+    [[LoginTool shareInstance] youMustLoinWithTarget:self Dothis:^{
+        MeViewController * vc = [[MeViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }];
 }
 
 

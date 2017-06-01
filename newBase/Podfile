@@ -11,4 +11,5 @@ pod 'MJRefresh'
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'CocoaAsyncSocket'
+pod 'IQKeyboardManager'
 end

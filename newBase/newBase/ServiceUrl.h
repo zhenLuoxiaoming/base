@@ -19,4 +19,7 @@
 #define getA @"http://119.23.45.80/Demo/public/Index/getAInfo"
 #define cityWeather @"http://119.23.45.80/Demo/public/Index/cityWeather"
 #define getB @"http://119.23.45.80/Demo/public/Index/getBInfo"
+#define jiebang @"http://119.23.45.80/Demo/public/Index/removeEquip"
+
+#define feebackurl @"http://119.23.45.80/Demo/public/Index/feedBack"
 #endif /* ServiceUrl_h */
